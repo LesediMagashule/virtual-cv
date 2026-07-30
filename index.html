@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Lesedi Magashule | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <nav>
+    <!-- Navigation Header -->
+    <header>
+        <div class="logo">Lesedi Magashule</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h2>Lesedi Magashule</h2>
-
-        <ul>
-
-            <li><a href="#">Home</a></li>
-
-            <li><a href="#">About</a></li>
-
-            <li><a href="#">Skills</a></li>
-
-            <li><a href="#">Projects</a></li>
-
-            <li><a href="#">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-    <section class="hero">
-
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
         <h1>Hi, I'm Lesedi 👋</h1>
-
-        <h3>Final-Year BSc Information Technology Student</h3>
-
-        <p>
-            Passionate about Software Development,
-            Web Development and Database Systems.
-        </p>
-
-        <button>Download CV</button>
-
+        <h2>Final-Year BSc Information Technology Student</h2>
+        <p>Passionate about Software Development, Web Development, and Database Systems.</p>
+        <a href="CV.pdf" download="Lesedi_Magashule_CV.pdf" class="btn">Download CV</a>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am an Information Technology student focused on building robust software solutions, modern web applications, 
+            and data-driven systems. Driven by continuous learning, I enjoy solving complex problems through clean and efficient code.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Database Systems</span>
+            <span class="skill-tag">Software Engineering</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Virtual CV Portfolio</h3>
+                <p>An interactive, responsive virtual portfolio website built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/LesediMagashule/virtual-cv" target="_blank" class="project-link">View GitHub Repo</a>
+            </div>
+            <div class="project-card">
+                <h3>Full-Stack Web App</h3>
+                <p>A collaborative web application developed with team members for academic coursework.</p>
+                <a href="#" target="_blank" class="project-link">View Group Repo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lesedi Magashule. All Rights Reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
-
 </body>
-
 </html>
