@@ -22,12 +22,15 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Profile Picture -->
     <section id="hero" class="hero">
-        <h1>Hi, I'm Lesedi 👋</h1>
-        <h2>Final-Year BSc Information Technology Student</h2>
-        <p>Passionate about Software Development, Web Development, and Database Systems.</p>
-        <a href="CV.pdf.pdf" download="Lesedi_Magashule_CV.pdf" class="btn">Download CV</a>
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Lesedi Magashule Profile Picture" class="profile-img">
+            <h1>Hi, I'm Lesedi 👋</h1>
+            <h2>Final-Year BSc Information Technology Student</h2>
+            <p>Passionate about Software Development, Web Development, and Database Systems.</p>
+            <a href="CV.pdf.pdf" download="Lesedi_Magashule_CV.pdf" class="btn">Download CV</a>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -68,15 +71,29 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Professional Contact Section -->
     <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+        <p class="contact-intro">Feel free to reach out for collaboration, opportunities, or inquiries.</p>
+        
+        <div class="contact-cards">
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:magashulelesedi76@gmail.com">magashulelesedi76@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <h3>💼 LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/lesedi-magashule-b91821417?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Lesedi Magashule</a></p>
+            </div>
+            <div class="contact-card">
+                <h3>💻 GitHub</h3>
+                <p><a href="https://github.com/LesediMagashule" target="_blank">LesediMagashule</a></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 25px;">
+            <a href="mailto:magashulelesedi76@gmail.com" class="btn">Send Email</a>
+        </div>
     </section>
 
     <!-- Footer -->
